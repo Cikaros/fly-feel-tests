@@ -1,0 +1,23 @@
+logging:
+  level:
+    org.springframework: error
+    org.mybatis: debug
+    io.gitee: debug
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  messages:
+    basename: i18n/Message
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+  jackson:
+    default-property-inclusion: non_null
+  freemarker:
+    suffix: .html
+    request-context-attribute: request
+  mvc:
+    throw-exception-if-no-handler-found: true
+server:
+  port: 8080
