@@ -14,17 +14,17 @@
     <parent>
         <groupId>io.gitee.cikaros</groupId>
         <artifactId>fly-feel</artifactId>
-        <version>1.0</version>
-        <relativePath>../fly-feel/pom.xml</relativePath>
+        <version>1.0.0</version>
+        <relativePath/>
     </parent>
 
     <artifactId>fly-feel-tests</artifactId>
-    <version>1.0</version>
+    <version>1.0.0</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <fly-feel.dependencies.version>1.0</fly-feel.dependencies.version>
+        <fly-feel.dependencies.version>1.0.0</fly-feel.dependencies.version>
     </properties>
 
     <dependencyManagement>
