@@ -4,6 +4,8 @@ logging:
     org.mybatis: debug
     io.gitee: debug
 spring:
+  activiti:
+    deployment-mode: never-fail
   main:
     allow-bean-definition-overriding: true
   messages:

@@ -12,6 +12,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
@@ -32,12 +33,7 @@ public class FlyFeelBasisServer {
         SpringApplication.run(FlyFeelBasisServer.class, args);
     }
 
-    @GetMapping("/index")
-    public String index() {
-        return "index";
-    }
-
-    @PostMapping("/index")
+    @RequestMapping("/index")
     @ResponseBody
     public RestResult index2() {
         return RestResult.error();
