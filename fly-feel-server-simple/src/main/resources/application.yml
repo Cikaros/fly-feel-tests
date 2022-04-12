@@ -8,3 +8,12 @@ spring:
     suffix: .html
   mvc:
     throw-exception-if-no-handler-found: true
+feign:
+  paths:
+    demo: http://localhost:9090
+  client:
+    config:
+      default:
+        loggerLevel: FULL
+server:
+  port: 9090

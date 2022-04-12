@@ -23,7 +23,7 @@
         </dependency>
         <dependency>
             <groupId>io.gitee.cikaros</groupId>
-            <artifactId>fly-feel-message</artifactId>
+            <artifactId>fly-feel-feign</artifactId>
         </dependency>
         <dependency>
             <groupId>io.gitee.cikaros</groupId>
