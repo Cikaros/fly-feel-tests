@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_0pouox5" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="4.12.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="1.1.0">
+  <bpmn:process id="Process_0uun1g1" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>Flow_062i78e</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="Event_124vjek">
+      <bpmn:incoming>Flow_1rjvatt</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:task id="Activity_02ylhu0">
+      <bpmn:incoming>Flow_062i78e</bpmn:incoming>
+      <bpmn:outgoing>Flow_1rjvatt</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_062i78e" sourceRef="StartEvent_1" targetRef="Activity_02ylhu0" />
+    <bpmn:sequenceFlow id="Flow_1rjvatt" sourceRef="Activity_02ylhu0" targetRef="Event_124vjek" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_0uun1g1">
+      <bpmndi:BPMNEdge id="Flow_062i78e_di" bpmnElement="Flow_062i78e">
+        <di:waypoint x="210" y="108" />
+        <di:waypoint x="210" y="140" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1rjvatt_di" bpmnElement="Flow_1rjvatt">
+        <di:waypoint x="210" y="220" />
+        <di:waypoint x="210" y="252" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="192" y="72" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_02ylhu0_di" bpmnElement="Activity_02ylhu0">
+        <dc:Bounds x="160" y="140" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_124vjek_di" bpmnElement="Event_124vjek">
+        <dc:Bounds x="192" y="252" width="36" height="36" />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
